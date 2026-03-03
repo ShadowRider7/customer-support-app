@@ -1,17 +1,35 @@
 import React from "react";
-
+import circle from "../../assets/Ellipse 22.svg";
+import calender from "../../assets/calender.svg";
 const TicketCard = ({ ticket }) => {
   console.log(ticket);
   return (
-    <div className="card  bg-base-100 card-sm shadow-sm">
-      <div className="card-body">
-        <h2 className="card-title">Small Card</h2>
-        <p>
-          A card component has a figure, a body part, and inside body there are
-          title and actions parts
-        </p>
-        <div className="justify-end card-actions">
-          <button className="btn btn-primary">Buy Now</button>
+    <div className="card bg-base-100 shadow-2xl">
+      <div className="p-4">
+        <div className="flex justify-between">
+          <h2 className="font-semibold ">{ticket.title}</h2>
+          <div className="btn btn-sm rounded-2xl bg-green-200 text-green-700">
+            <img src={circle} alt="" />
+            <p>Open</p>
+          </div>
+        </div>
+        <div>
+          <p className="text-gray-500">{ticket.description}</p>
+        </div>
+
+        <div className=" text-gray-500 text-sm flex items-center gap-2 justify-between mt-3">
+          <div className="flex gap-2">
+            <div>#{ticket.id}</div>
+            <div className="text-red-600">{ticket.priority}</div>
+          </div>
+          <div className="flex gap-2">
+            <div>{ticket.customer}</div>
+
+            <div className="flex gap-1 items-center">
+              <img className="h-4" src={calender} alt="" />
+              <p>{ticket.createdAt}</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

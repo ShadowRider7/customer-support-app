@@ -23,7 +23,7 @@ function App() {
           <State status={"Resolved"}></State>
         </div>
       </div>
-      <div className="flex flex-col-reverse md:flex-row mx-auto max-w-300 gap-4">
+      <div className="flex flex-col-reverse md:flex-row mx-auto max-w-300 gap-4 mb-10 ">
         <div className="w-full md:w-3/4 ">
           <CustomTickets customerTickets={customerTickets}></CustomTickets>
         </div>
