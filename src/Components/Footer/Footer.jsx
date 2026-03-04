@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div className="bg-black">
       <div className="max-w-300 mx-auto">
-        <footer className="flex flex-col md:flex-row justify-between text-white py-5 ">
+        <footer className="flex flex-col md:flex-row  text-white py-5 ">
           <div className="flex-1 mx-5 mb-3">
             <h2 className="text-2xl">CS — Ticket System</h2>
             <p className="text-sm text-gray-300">
@@ -13,7 +13,7 @@ const Footer = () => {
               customer service.
             </p>
           </div>
-          <div className=" flex-4 mx-10 md:grid grid-cols-4">
+          <div className=" flex-4 ml-5 space-x-3 grid grid-cols-2 md:grid-cols-4">
             <div className="flex flex-col space-y-2">
               <h6 className="text-xl">Company</h6>
               <a className="link link-hover text-gray-400">About Us</a>

@@ -1,9 +1,19 @@
 import React from "react";
 import calender from "../../assets/calender.svg";
-const TicketCard = ({ ticket }) => {
-  console.log(ticket);
+const TicketCard = ({
+  ticket,
+  setInProgress,
+  inProgress,
+  handleRemainingSupportData,
+}) => {
+  const handleInProgress = () => {
+    const newInProgress = [...inProgress, ticket];
+    setInProgress(newInProgress);
+    handleRemainingSupportData(ticket);
+  };
+
   return (
-    <div className="card bg-base-100 shadow-2xl">
+    <div onClick={handleInProgress} className="card bg-base-100 shadow-2xl">
       <div className="p-4">
         <div className="flex justify-between">
           <h2 className="font-semibold ">{ticket.title}</h2>

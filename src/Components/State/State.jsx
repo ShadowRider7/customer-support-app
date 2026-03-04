@@ -1,7 +1,7 @@
 import React from "react";
 import design1 from "../../assets/vector1.png";
 
-const State = ({ status }) => {
+const State = ({ status, inProgress, resolved }) => {
   return (
     <div>
       <img
@@ -11,9 +11,11 @@ const State = ({ status }) => {
       />
       <div className="relative flex flex-col items-center">
         <h2 className="text-white text-xl font-normal tracking-wide">
-          {status}
+          {status ? "In-Progress" : "Resolved"}
         </h2>
-        <p className="text-white text-[72px] font-bold leading-none mt-2">0</p>
+        <p className="text-white text-[72px] font-bold leading-none mt-2">
+          {status ? inProgress.length : resolved.length}
+        </p>
       </div>
       <img
         src={design1}
