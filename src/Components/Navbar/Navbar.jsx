@@ -72,7 +72,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div>
-          <a className="btn bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-white font-semibold py-2 px-6 rounded-lg shadow-md hover:opacity-90 transition-opacity">
+          <a className="btn bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-white font-semibold py-2  rounded-lg shadow-md hover:opacity-90 transition-opacity">
             + New Ticket
           </a>
         </div>

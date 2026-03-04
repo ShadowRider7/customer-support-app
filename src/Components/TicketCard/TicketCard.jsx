@@ -1,15 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import calender from "../../assets/calender.svg";
 import { toast } from "react-toastify";
+
 const TicketCard = ({ ticket, setInProgress, inProgress }) => {
+  const [added, setAdded] = useState(false);
+
   const handleInProgress = () => {
     toast("Started working on this Ticket");
     const newInProgress = [...inProgress, ticket];
     setInProgress(newInProgress);
+    setAdded(true);
   };
 
   return (
-    <div onClick={handleInProgress} className="card bg-base-100 shadow-2xl">
+    <button
+      disabled={added}
+      onClick={handleInProgress}
+      className="card text-start bg-base-100 shadow-2xl"
+    >
       <div className="p-4">
         <div className="flex justify-between">
           <h2 className="font-semibold ">{ticket.title}</h2>
@@ -29,7 +37,11 @@ const TicketCard = ({ ticket, setInProgress, inProgress }) => {
         <div className=" text-gray-500 text-sm flex items-center gap-2 justify-between mt-3">
           <div className="flex gap-2">
             <div>#{ticket.id}</div>
-            <div className="text-red-600">{ticket.priority}</div>
+            <div
+              className={`font-bold ${ticket.priority === "Medium-Priority" ? "text-yellow-500" : ""} ${ticket.priority === "Low-Priority" ? "text-green-500" : ""} ${ticket.priority === "High-Priority" ? "text-red-500" : ""}`}
+            >
+              {ticket.priority}
+            </div>
           </div>
           <div className="flex gap-2">
             <div>{ticket.customer}</div>
@@ -41,7 +53,7 @@ const TicketCard = ({ ticket, setInProgress, inProgress }) => {
           </div>
         </div>
       </div>
-    </div>
+    </button>
   );
 };
 

@@ -4,7 +4,7 @@
     "title": "Cannot access my account",
     "description": "I keep getting an 'Invalid Credentials' error when trying to log in, even though I just reset my password yesterday.",
     "customer": "Alice Johnson",
-    "priority": "High",
+    "priority": "High-Priority",
     "status": "Open",
     "createdAt": "2026-03-01"
   },
@@ -13,7 +13,7 @@
     "title": "Double charged for monthly subscription",
     "description": "My bank statement shows two charges of $15.99 on the 1st of the month. Please refund the duplicate charge.",
     "customer": "Michael Smith",
-    "priority": "High",
+    "priority": "High-Priority",
     "status": "In-Progress",
     "createdAt": "2026-03-02"
   },
@@ -22,7 +22,7 @@
     "title": "How do I export my data?",
     "description": "I need to download all my previous invoices in a single PDF or CSV file. Is there a way to do this from the dashboard?",
     "customer": "Sarah Lee",
-    "priority": "Low",
+    "priority": "Low-Priority",
     "status": "Open",
     "createdAt": "2026-02-28"
   },
@@ -31,7 +31,7 @@
     "title": "Mobile app crashes on startup",
     "description": "Ever since the last iOS update, the app crashes immediately after displaying the splash screen.",
     "customer": "David Kim",
-    "priority": "Critical",
+    "priority": "High-Priority",
     "status": "Open",
     "createdAt": "2026-03-03"
   },
@@ -40,7 +40,7 @@
     "title": "Feature Request: Dark Mode",
     "description": "It would be great if you could add a dark mode toggle to the dashboard. The current white background is too bright at night.",
     "customer": "Emily Chen",
-    "priority": "Low",
+    "priority": "Low-Priority",
     "status": "Open",
     "createdAt": "2026-03-01"
   },
@@ -49,7 +49,7 @@
     "title": "Request to delete account",
     "description": "I no longer need your services and would like my account and all associated data to be permanently deleted.",
     "customer": "James Wilson",
-    "priority": "Medium",
+    "priority": "Medium-Priority",
     "status": "In-Progress",
     "createdAt": "2026-02-25"
   },
@@ -58,7 +58,7 @@
     "title": "Missing item in recent order",
     "description": "Order #44591 arrived today, but the wireless mouse was missing from the box. The packing slip says it should be included.",
     "customer": "Linda Martinez",
-    "priority": "High",
+    "priority": "High-Priority",
     "status": "In-Progress",
     "createdAt": "2026-03-02"
   },
@@ -67,7 +67,7 @@
     "title": "Password reset link expired",
     "description": "I requested a password reset link but it said it was expired immediately after I clicked it in my email.",
     "customer": "Robert Taylor",
-    "priority": "Medium",
+    "priority": "Medium-Priority",
     "status": "In-Progress",
     "createdAt": "2026-02-27"
   },
@@ -76,7 +76,7 @@
     "title": "API rate limit exceeded unexpectedly",
     "description": "Our application is receiving a 429 Too Many Requests error, but our logs show we are well below our tier limit.",
     "customer": "TechCorp Inc. (Admin)",
-    "priority": "Critical",
+    "priority": "High-Priority",
     "status": "Open",
     "createdAt": "2026-03-03"
   },
@@ -85,7 +85,7 @@
     "title": "Need help changing email address",
     "description": "I don't see an option in the profile settings to update my email address. Can you assist me with this?",
     "customer": "William Brown",
-    "priority": "Low",
+    "priority": "Low-Priority",
     "status": "Open",
     "createdAt": "2026-02-20"
   },
@@ -94,7 +94,7 @@
     "title": "Typo on the pricing page",
     "description": "Just wanted to let you know there is a spelling mistake in the 'Enterprise' column on your public pricing page.",
     "customer": "Jessica Davis",
-    "priority": "Low",
+    "priority": "Low-Priority",
     "status": "In-Progress",
     "createdAt": "2026-03-01"
   },
@@ -103,7 +103,7 @@
     "title": "Slack integration stopped working",
     "description": "Notifications are no longer being sent to our Slack channel. I tried reconnecting the app but it didn't help.",
     "customer": "Brian White",
-    "priority": "Medium",
+    "priority": "Medium-Priority",
     "status": "In-Progress",
     "createdAt": "2026-03-02"
   },
@@ -112,7 +112,7 @@
     "title": "Not receiving 2FA SMS codes",
     "description": "I am trying to log in but the two-factor authentication text messages are not coming through to my phone.",
     "customer": "Olivia Garcia",
-    "priority": "High",
+    "priority": "High-Priority",
     "status": "Open",
     "createdAt": "2026-03-03"
   },
@@ -121,7 +121,7 @@
     "title": "Dashboard loading very slowly",
     "description": "The main analytics dashboard takes over 30 seconds to load on Google Chrome. All other websites work fine.",
     "customer": "Thomas Wright",
-    "priority": "Medium",
+    "priority": "Medium-Priority",
     "status": "Open",
     "createdAt": "2026-03-03"
   }
