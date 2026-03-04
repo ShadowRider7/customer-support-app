@@ -1,17 +1,11 @@
 import React from "react";
 import calender from "../../assets/calender.svg";
 import { toast } from "react-toastify";
-const TicketCard = ({
-  ticket,
-  setInProgress,
-  inProgress,
-  handleRemainingSupportData,
-}) => {
+const TicketCard = ({ ticket, setInProgress, inProgress }) => {
   const handleInProgress = () => {
     toast("Started working on this Ticket");
     const newInProgress = [...inProgress, ticket];
     setInProgress(newInProgress);
-    handleRemainingSupportData(ticket);
   };
 
   return (

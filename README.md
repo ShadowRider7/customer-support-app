@@ -9,4 +9,4 @@
 5. How is event handling done in React?
    ans: by using onClick ,but needs an arrow function for passing values through function
 
-Live site Link - towering-popcornkhao71.surge.sh
+Live site Link - conscious-quietparivhaia71.surge.sh

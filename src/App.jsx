@@ -16,6 +16,12 @@ const customerTickets = fetchTicket();
 function App() {
   const [inProgress, setInProgress] = useState([]);
   const [resolved, setResolved] = useState([]);
+  const [ticketData, setTicketData] = useState([]);
+
+  const handleRemainingSupportData = (ticket) => {
+    const remainingData = ticketData.filter((data) => data.id != ticket.id);
+    setTicketData(remainingData);
+  };
 
   const completeTaskData = (taskCard) => {
     toast("Successfully Resolved Problem");
@@ -25,6 +31,7 @@ function App() {
       (progress) => progress.id != taskCard.id,
     );
     setInProgress(newInProgress);
+    handleRemainingSupportData(taskCard);
   };
 
   return (
@@ -41,6 +48,8 @@ function App() {
       <div className="flex flex-col-reverse md:flex-row mx-auto max-w-300 gap-4 mb-10 ">
         <div className="w-full md:w-3/4 ">
           <CustomTickets
+            ticketData={ticketData}
+            setTicketData={setTicketData}
             inProgress={inProgress}
             setInProgress={setInProgress}
             customerTickets={customerTickets}
@@ -48,6 +57,7 @@ function App() {
         </div>
         <div className="w-full md:w-1/4">
           <TaskStatus
+            handleRemainingSupportData={handleRemainingSupportData}
             resolved={resolved}
             completeTaskData={completeTaskData}
             inProgress={inProgress}
