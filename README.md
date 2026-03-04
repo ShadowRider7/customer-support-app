@@ -1,16 +1,10 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. What is JSX, and why is it used?
+   ans: jsx is a syntax extension for javascript that let us write HTML directly in our javascript file.
+2. What is the difference between State and Props?
+   ans: parents give data to child component using props, and state is the components's own memory data that can be changed over time according to the functionality
+3. What is the useState hook, and how does it work?
+   ans: useState hook let us store the state(memory) to a functional component
+4. How can you share state between components in React?
+   ans: we can share state by a common ground for both components as data flows from the parent component to the child components as props
+5. How is event handling done in React?
+   ans: by using onClick ,but needs an arrow function for passing values through function
