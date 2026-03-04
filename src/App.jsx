@@ -5,6 +5,7 @@ import Footer from "./Components/Footer/Footer";
 import Navbar from "./Components/Navbar/Navbar";
 import State from "./Components/State/State";
 import TaskStatus from "./Components/TaskStatus/TaskStatus";
+import { toast, ToastContainer } from "react-toastify";
 
 const fetchTicket = async () => {
   const res = await fetch("support.json");
@@ -17,6 +18,7 @@ function App() {
   const [resolved, setResolved] = useState([]);
 
   const completeTaskData = (taskCard) => {
+    toast("Successfully Resolved Problem");
     const resolvedArray = [...resolved, taskCard];
     setResolved(resolvedArray);
     const newInProgress = inProgress.filter(
@@ -53,6 +55,7 @@ function App() {
         </div>
       </div>
       <Footer></Footer>
+      <ToastContainer />
     </>
   );
 }
