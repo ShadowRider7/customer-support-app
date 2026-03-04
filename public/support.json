@@ -23,7 +23,7 @@
     "description": "I need to download all my previous invoices in a single PDF or CSV file. Is there a way to do this from the dashboard?",
     "customer": "Sarah Lee",
     "priority": "Low",
-    "status": "Closed",
+    "status": "Open",
     "createdAt": "2026-02-28"
   },
   {
@@ -50,7 +50,7 @@
     "description": "I no longer need your services and would like my account and all associated data to be permanently deleted.",
     "customer": "James Wilson",
     "priority": "Medium",
-    "status": "Resolved",
+    "status": "In-Progress",
     "createdAt": "2026-02-25"
   },
   {
@@ -68,7 +68,7 @@
     "description": "I requested a password reset link but it said it was expired immediately after I clicked it in my email.",
     "customer": "Robert Taylor",
     "priority": "Medium",
-    "status": "Resolved",
+    "status": "In-Progress",
     "createdAt": "2026-02-27"
   },
   {
@@ -86,7 +86,7 @@
     "description": "I don't see an option in the profile settings to update my email address. Can you assist me with this?",
     "customer": "William Brown",
     "priority": "Low",
-    "status": "Closed",
+    "status": "Open",
     "createdAt": "2026-02-20"
   },
   {
@@ -95,7 +95,7 @@
     "description": "Just wanted to let you know there is a spelling mistake in the 'Enterprise' column on your public pricing page.",
     "customer": "Jessica Davis",
     "priority": "Low",
-    "status": "Resolved",
+    "status": "In-Progress",
     "createdAt": "2026-03-01"
   },
   {

@@ -1,5 +1,4 @@
 import React from "react";
-import circle from "../../assets/Ellipse 22.svg";
 import calender from "../../assets/calender.svg";
 const TicketCard = ({ ticket }) => {
   console.log(ticket);
@@ -8,9 +7,13 @@ const TicketCard = ({ ticket }) => {
       <div className="p-4">
         <div className="flex justify-between">
           <h2 className="font-semibold ">{ticket.title}</h2>
-          <div className="btn btn-sm rounded-2xl bg-green-200 text-green-700">
-            <img src={circle} alt="" />
-            <p>Open</p>
+          <div
+            className={`btn btn-sm rounded-2xl ${ticket.status == "Open" ? "bg-green-200 text-green-700" : "bg-yellow-200 text-yellow-700"} `}
+          >
+            <div
+              className={`w-4 h-4 rounded-full ${ticket.status == "Open" ? "bg-green-700" : "bg-[#FEBB0C]"}`}
+            ></div>
+            <p>{ticket.status}</p>
           </div>
         </div>
         <div>
