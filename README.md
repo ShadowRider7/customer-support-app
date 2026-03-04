@@ -8,3 +8,5 @@
    ans: we can share state by a common ground for both components as data flows from the parent component to the child components as props
 5. How is event handling done in React?
    ans: by using onClick ,but needs an arrow function for passing values through function
+
+Live site Link - towering-popcornkhao71.surge.sh
